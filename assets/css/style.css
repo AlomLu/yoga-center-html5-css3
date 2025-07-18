@@ -414,9 +414,6 @@ body{
 }
 
 /* 10. Layout: Services */
-.services{
-  padding-top: 65px;
-}
 .service {
 	width: 370px;
 	margin-right: 30px;
@@ -425,6 +422,7 @@ body{
 	text-align: center;
 	box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
 	position: relative;
+	min-height: 365px;
 }
 .service::before {
   position: absolute;
@@ -503,4 +501,7 @@ body{
 }
 .service a:hover, .service a:hover::before {
   color: #4CC5C1;
+}
+.service-btn {
+	text-align: center;
 }
