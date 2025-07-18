@@ -12,6 +12,7 @@
     08. Layout: Program Highlights
     09. Layout: About
     10. Layout: Services
+    11. Layout: Classes
 */
 
 
@@ -246,7 +247,7 @@ body{
 	color: #fff;
 	font-size: 14px;
 }
-.header-contacts li:hover i, .header-contacts li:hover span a, .header-social-links li a:hover, .logo ul li a:hover, .menu ul li a:hover{
+.header-contacts li:hover i, .header-contacts li:hover span a, .header-social-links li a:hover, .logo ul li a:hover, .menu ul li a:hover, .classes-sidebar ul li a:hover{
   color: #ff3636;
 }
 .header-social-links {
@@ -504,4 +505,59 @@ body{
 }
 .service-btn {
 	text-align: center;
+}
+
+/* 11. Layout: Classes */
+.classes-area {
+  background: #FFFBF9;
+}
+.classes-sidebar {
+	width: 215px;
+	margin-right: 30px;
+	border-right: 1px solid #D8E7FF;
+}
+.classes-sidebar ul li {
+  margin-bottom: 20px;
+}
+.classes-sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+.classes-sidebar ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+  color: #1A1A1A;
+}
+.classes-content {
+  width: 925px;
+}
+.class-item {
+	width: 460px;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+.class-item h5 {
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.classes-img {
+  width: 410px;
+  position: relative;
+  z-index: 22;
+}
+.classes-img img{
+  border-radius: 50% 50%  0 0;
+}
+.classes-img::before {
+	position: absolute;
+	content: "";
+	top: -25px;
+	left: -25px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #ff3636;
+	z-index: -2;
+	border-radius: 50% 50% 0 0;
 }
