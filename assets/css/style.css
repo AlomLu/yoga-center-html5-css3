@@ -15,6 +15,7 @@
     11. Layout: Classes
     12. Layout: Instructor
     13. Layout: Testimonial
+    14. Layout: Events
 */
 
 
@@ -485,7 +486,7 @@ body{
   font-size: 22px;
   font-weight: 400;
 }
-.service a {
+.service a, .event-content a {
   font-size: 17px;
   text-transform: capitalize;
   display: inline-block;
@@ -493,7 +494,7 @@ body{
   padding-left: 25px;
   color: #ff3636;
 }
-.service a::before {
+.service a::before, .event-content a::before {
   position: absolute;
   content: "\f061";
   font-family: "Font Awesome 5 free";
@@ -502,7 +503,7 @@ body{
   left: 0;
   transition: .3s;
 }
-.service a:hover, .service a:hover::before {
+.service a:hover, .service a:hover::before, .event-content a:hover, .event-content a:hover::before {
   color: #4CC5C1;
 }
 .service-btn {
@@ -649,4 +650,44 @@ body{
   font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
+}
+
+/* 14. Layout: Events */
+.events-area {
+	background: #FFFBF9;
+}
+.event-card {
+  width: 370px;
+  margin-right: 30px;
+  position: relative;
+  transition: .3s;
+}
+.event-card:hover {
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+}
+.event-card:last-child {
+  margin-right: 0;
+}
+.event-content {
+  padding: 25px;
+  background: #fff;
+}
+.event-content h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.event-meta {
+  margin: 30px 0;
+}
+.event-content p {
+  margin: 15px 0;
+  line-height: 15px;
+}
+.event-meta p i {
+  margin-right: 15px;
+  color: #4CC5AF;
+}
+.event-meta p span {
+  font-size: 14px;
 }
