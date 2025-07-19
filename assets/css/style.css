@@ -18,6 +18,9 @@
     14. Layout: Events
     15. Layout: Cta
     16. Layout: Blogs 
+    17. Layout: Appointment
+    17. Layout: Discount
+    18. Layout: Footer
 */
 
 
@@ -252,7 +255,7 @@ body{
 	color: #fff;
 	font-size: 14px;
 }
-.header-contacts li:hover i, .header-contacts li:hover span a, .header-social-links li a:hover, .logo ul li a:hover, .menu ul li a:hover, .classes-sidebar ul li a:hover, .instructor-card_content a:hover, .blog-content h4 a:hover{
+.header-contacts li:hover i, .header-contacts li:hover span a, .header-social-links li a:hover, .logo ul li a:hover, .menu ul li a:hover, .classes-sidebar ul li a:hover, .instructor-card_content a:hover, .blog-content h4 a:hover, .footer-widget ul li a:hover, .footer-legal-links ul li a:hover, .copyright p a:hover{
   color: #ff3636;
 }
 .header-social-links {
@@ -778,4 +781,167 @@ body{
 .blog-btn {
 	text-align: center;
   margin-top: 30px;
+}
+
+/* 17. Layout: Appointment */
+.appointment:last-child {
+  margin-right: 0;
+}
+.appointment-img {
+  width: 490px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 2;
+}
+.appointment-img img{
+  border-radius: 0 50% 0 0;
+}
+.appointment-img::before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border: 2px solid #ff3636;
+  border-radius: 0 50% 0 0;
+}
+.appointment-form {
+  width: 640px;
+}
+.appointment-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.appointment-form input:last-child {
+  margin-bottom: 0;
+}
+.appointment-form input:focus {
+	outline: none;
+}
+.appointment-form {
+	width: 620px;
+	padding: 20px 25px;
+	background: #FFFBF9;
+}
+
+/* 17. Layout: Discount */
+.discount-area{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+.discount-area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  opacity: .7;
+  z-index: -2;
+}
+.discount {
+	padding: 100px 0;
+	text-align: center;
+  color: #fff;
+}
+.discount h4 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.discount p {
+  width: 50%;
+  margin: 0 auto;
+}
+.discount a {
+	margin-top: 30px;
+}
+
+/* 18. Layout: Footer */
+.footer-area {
+  background: #547670;
+}
+.footer-widget {
+	width: 370px;
+	margin-right: 30px;
+}
+.footer-widget:last-child {
+  margin-right: 0;
+}
+.footer-widget h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.footer-widget ul li{
+  margin-bottom: 20px;
+}
+.footer-widget ul li:last-child{
+  margin-bottom: 0;
+}
+.footer-widget ul li a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.contact-info {
+  color: #fff;
+}
+.contact-info i {
+  margin-right: 15px;
+}
+.footer-social-links li {
+	display: inline-block;
+	margin-right: 15px;
+  transition: .3s;
+}
+.footer-widget ul.footer-social-links li{
+  margin-bottom: 0;
+}
+.footer-social-links li:last-child{
+  margin-right: 0;
+}
+.footer-bottom {
+	padding: 25px 0;
+	border-top: 1px solid #ddd;
+}
+.copyright {
+  width: 480px;
+}
+.copyright p, .copyright p a {
+  color: #fff;
+  text-transform: capitalize;
+}
+.copyright p a {
+  margin-left: 5px;
+}
+.footer-legal-links {
+  width: 380px;
+  text-align: right;
+}
+.footer-legal-links ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+.footer-legal-links ul li:last-child {
+  margin-right: 0;
+}
+.footer-legal-links ul li a {
+  color: #fff;
+  text-transform: capitalize;
 }
