@@ -632,6 +632,19 @@ body{
 	margin-right: 30px;
 	padding: 35px;
   text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.testimonial-card::before {
+	position: absolute;
+	content: "";
+	top: 18px;
+	left: 124px;
+	width: 120px;
+	height: 120px;
+	background: #B6C5C5;
+	z-index: -2;
+	border-radius: 50%;
 }
 .testimonial-card:last-child {
   margin-right: 0;
